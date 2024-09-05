@@ -14,6 +14,7 @@ export const MonacoEditorComponent = () => {
     
     const handlerEditorChange = (value: string | undefined ) =>{
         setCodeModified(true)
+        console.log(value)
     }
     const handlerSelectedLanguage = (language: string) =>{
         setSelectedlanguage(language)
@@ -26,8 +27,7 @@ export const MonacoEditorComponent = () => {
 
     const handleCopyLink =() =>{
         if(shareUrl){
-            const unique = shareUrl.split("/")
-            const uniqueId = unique[3]
+        
             navigator.clipboard.writeText(shareUrl)
             alert("Link Copied to Clipboard!")
         }

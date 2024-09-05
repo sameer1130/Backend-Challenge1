@@ -10,6 +10,7 @@ export const SelectTheme = ({onChange}:{
         setSelectedTheme(value)
         onChange(value)
     }
+    console.log(selectedTheme);
     return <form className="max-w-sm mx-auto">
       
       <select id="Theme"

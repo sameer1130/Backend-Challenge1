@@ -12,7 +12,7 @@ export const Button = ({codeModified, shareUrl,setShareUrl}: {
 
     const [isShared, setIsShare] = useState(false);
     const navigate = useNavigate();
-
+    console.log(shareUrl)
     const handleShare = () =>{
         
             const uniqueId = uuidv4();

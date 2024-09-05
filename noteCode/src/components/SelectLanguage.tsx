@@ -9,6 +9,7 @@ export const SelectLanguage = ({onChange} :{
         setSelectedlanguage(value)
         onChange(value)
     }
+    console.log(selectedLanguage)
     return <form className="max-w-sm mx-auto">
       
       <select id="Language"
